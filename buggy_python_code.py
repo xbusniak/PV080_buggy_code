@@ -1,7 +1,7 @@
 """Docstring for urllib"""
 import urllib
-import yaml
 import flask
+import yaml
 
 app = flask.Flask(__name__)
 
@@ -48,9 +48,9 @@ def load_yaml(filename):
     return deserialized_data
 
 
-def authenticate(password):
+def authenticate(password1):
     """Assert that the password is correct"""
-    assert password == "Iloveyou", "Invalid password!"
+    assert password1 == "Iloveyou", "Invalid password!"
     print("Successfully authenticated!")
 
 
